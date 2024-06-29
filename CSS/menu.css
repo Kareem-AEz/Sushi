@@ -1,0 +1,135 @@
+/* 
+- Font sizez (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 
+    52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTMES (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 28 / 32 / 48 / 64 / 80 /
+    96 / 128
+*/
+
+.section-menu{
+  padding: 9.6rem 0;
+}
+
+.section-menu__content {
+  box-shadow: 0 1rem 2rem rgba(38, 38, 38, 0.25);
+
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  /* background-image: url('../images/popular_bg.png'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 4.8rem 9.6rem;
+}
+
+.section-menu .heading-secondary {
+  color: var(--primary-color);
+}
+
+.section-menu__food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+  row-gap: 1.2rem;
+}
+
+.section-menu__food-item img {
+  height: 1.6rem;
+  width: auto;
+}
+.section-menu__food-link:link,
+.section-menu__food-link:visited {
+  color: var(--primary-color);
+  gap: 1.2rem !important;
+}
+
+/* cards section */
+
+.section-menu__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.8rem;
+}
+.section-menu__card {
+  cursor: pointer;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  flex-basis: 30rem;
+
+  background-color: var(--secondary-200-color);
+  border-radius: 2rem;
+  padding: 4.2rem 3.6rem;
+  border: 0.2rem solid var(--secondary-100-color);
+  box-shadow: 0 1rem 2rem rgba(38, 38, 38, 0.25);
+
+  transition: background-color 0.381s cubic-bezier(0.055, 0.425, 0.295, 0.89),
+    transform 0.381s cubic-bezier(0.055, 0.425, 0.295, 0.89),
+    box-shadow 0.381s cubic-bezier(0.055, 0.425, 0.295, 0.89);
+
+  /* it messes the animation */
+  /* z-index: 99;  */
+}
+
+.section-menu__card:hover {
+  background-color: var(--secondary-100-color);
+}
+
+.section-menu__card-img {
+  height: 6.4rem;
+}
+
+.section-menu__card-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section-menu__card-text-box {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.section-menu__card-reviews {
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-menu__card-rating {
+  color: var(--accent-color);
+}
+.section-menu__card-price {
+  font-weight: 600;
+}
+
+.section-menu__card--active,
+.section-menu__card--active.section-menu__card {
+  transform: scale(1.12);
+  color: var(--dark-color);
+  background-color: #fff;
+  pointer-events: none !important;
+  box-shadow: 0 1.4rem 3.2rem rgba(38, 38, 38, 0.15);
+}
+
+.section-menu__card--active .section-menu__card-rating {
+  color: var(--dark-color);
+}
+
+/* CTA */
+
+.section-menu__Btn {
+  margin: 0 auto;
+}

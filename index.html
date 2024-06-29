@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Discover the finest sushi IN TOWN, 
+      crafted with fresh ingredients and traditional techniques. Experience a culinary journey that tantalizes your taste buds."
+    />
+
+    <link rel="icon" type="image/png" href="assets/favicon-64x64.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/favicon-180x180.png" />
+
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/header.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi &mdash; Best Sushi in the town</title>
+
+    <link rel="stylesheet" href="CSS/media-queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__brand-overlay">
+          <a class="brand" href="#">Sushi<span>.</span></a>
+        </div>
+
+        <ul class="header__nav">
+          <li><a class="header__link" href="#about">About Us</a></li>
+          <li><a class="header__link" href="#menu">Menu</a></li>
+          <li><a class="header__link" href="#trending">Trending</a></li>
+          <li>
+            <a
+              class="btn btn-primary-red header__link--order"
+              href="#newsletter"
+              >Check Our Latest</a
+            >
+          </li>
+        </ul>
+
+        <button class="header__mobile-nav-btn">
+          <svg
+            class="Header__mobile-nav-icon"
+            name="menu"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            class="Header__mobile-nav-icon"
+            name="close"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section section-hero -->
+      <section class="section-hero">
+        <div class="section-hero__wrapper container">
+          <!-- section-hero Img -->
+          <div class="section-hero__img-box select-none">
+            <img src="assets/Sushi/sushi-1.png" alt="Sushi Main" />
+            <span>
+              日 <br />
+              本 <br />
+              食 <br />
+            </span>
+          </div>
+
+          <!-- section-hero Content -->
+          <div class="section-hero__content-box">
+            <div class="hreo__content-box-wrapper margin-left-md">
+              <h1 class="heading-primary margin-bottom-sm">
+                Savor the flavors of authentic Japanese cuisine.
+              </h1>
+              <p class="margin-bottom-md margin-left-sm">
+                Discover the finest sushi <strong>IN TOWN</strong>, crafted with
+                fresh ingredients and traditional techniques. Experience a
+                culinary journey that tantalizes your taste buds.
+              </p>
+
+              <div
+                class="section-hero__CTA-wrapper flex align-center flex-gap-sm margin-bottom-lg margin-left-sm"
+              >
+                <a class="btn btn-primary" href="#CheckOurLatest">
+                  Order Now
+                </a>
+                <a
+                  class="section-hero__Link-CTA btn flex align-center justify-center btn-Outline"
+                  href="#HowToOrder"
+                  >How To Order
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <aside class="section-hero__testimonial select-none">
+              <div class="section-hero__testimonial-text">
+                <h2 class="heading-secondary">+26K</h2>
+                <p>
+                  Happy <br />
+                  customers
+                </p>
+              </div>
+
+              <div class="section-hero__testimonial-content">
+                <img
+                  class="section-hero__testimonial-img"
+                  src="assets/Customers/uifaces-popular-image.jpg"
+                  alt="customer"
+                />
+                <blockquote class="section-hero__testimonial-quote">
+                  The sushi here is amazing—authentic Japanese taste. Fresh
+                  ingredients, artistic rolls, great service, and an atmosphere
+                  that transports you to Japan. Highly recommended for sushi
+                  lovers—the best in town!
+                  <br />
+                  <cite>&mdash; Tex Cassidy</cite>
+                </blockquote>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- section about us -->
+      <section class="section-about" id="about">
+        <div class="section-about__wrapper container">
+          <div class="section-about__img-box">
+            <div class="section-about__img">
+              <img src="assets/Sushi/sushi-3.png" alt="sushi" />
+            </div>
+            <div class="section-about__img">
+              <img src="assets/Sushi/sushi-2.png" alt="sushi" />
+            </div>
+            <a class="btn btn-primary section-about__btn-CTA" href="#LearnMore">
+              LearnMore
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="section-about__text-box">
+            <h2 class="heading-tertiary margin-bottom-lg">
+              About Us &sol; 私たちに関しては
+            </h2>
+            <h2 class="heading-secondary margin-bottom-sm">
+              Our mission is to bring authentic Japanese flavors to you.
+            </h2>
+            <p>
+              We embody <strong>Omotenashi</strong> &mdash; the Japanese
+              philosophy of hospitality &mdash; in every aspect of your dining
+              experience. From our carefully curated menu to our warm
+              hospitality, we aim to transport you to Japan with every visit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-menu container" id="menu">
+        <div class="section-menu__content">
+          <h2 class="heading-secondary margin-bottom-sm">
+            Popular Food &sol; 人気
+          </h2>
+
+          <nav class="section-menu__food margin-bottom-lg">
+            <ul class="section-menu__food-list">
+              <li class="section-menu__food-item">
+                <a
+                  class="btn-md btn-secondary section-menu__food-link"
+                  href="#all"
+                  >All</a
+                >
+              </li>
+              <li class="section-menu__food-item">
+                <a
+                  class="btn-md btn-secondary section-menu__food-link"
+                  href="#Sushi"
+                >
+                  <img src="images/Sushi.png" alt="Sushi" />
+                  Sushi
+                </a>
+              </li>
+              <li class="section-menu__food-item">
+                <a
+                  class="btn-md btn-secondary section-menu__food-link"
+                  href="#Ramen"
+                >
+                  <img src="images/Ramen.png" alt="Ramen" />
+
+                  Ramen
+                </a>
+              </li>
+              <li class="section-menu__food-item">
+                <a
+                  class="btn-md btn-secondary section-menu__food-link"
+                  href="#Udon"
+                >
+                  <img src="images/Udon.png" alt="Udon" />
+
+                  Udon
+                </a>
+              </li>
+              <li class="section-menu__food-item">
+                <a
+                  class="btn-md btn-secondary section-menu__food-link"
+                  href="#Dango"
+                >
+                  <img src="images/Dango.png" alt="Dango" />
+
+                  dango
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section class="section-menu__cards margin-bottom-md select-none">
+            <!-- card one -->
+            <figure tabindex="0" class="section-menu__card">
+              <img
+                class="section-menu__card-img"
+                src="images/Card 1.png"
+                alt=""
+              />
+
+              <figcaption class="section-menu__card-text-box">
+                <p class="section-menu__card-title">Chezu Sushi</p>
+                <div class="section-menu__card-reviews">
+                  <span class="section-menu__card-rating">&starf; 4.9</span>
+                  <span class="section-menu__card-price">$21.00</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- card 2 -->
+            <figure tabindex="0" class="section-menu__card">
+              <img
+                class="section-menu__card-img"
+                src="images/Card 2.png"
+                alt=""
+              />
+
+              <figcaption class="section-menu__card-text-box">
+                <p class="section-menu__card-title">Ramen Legendo</p>
+                <div class="section-menu__card-reviews">
+                  <span class="section-menu__card-rating">&starf; 4.9</span>
+                  <span class="section-menu__card-price">$21.00</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- card 3 -->
+            <figure tabindex="0" class="section-menu__card">
+              <img
+                class="section-menu__card-img"
+                src="images/Card 3.png"
+                alt=""
+              />
+
+              <figcaption class="section-menu__card-text-box">
+                <p class="section-menu__card-title">Dango</p>
+                <div class="section-menu__card-reviews">
+                  <span class="section-menu__card-rating">&starf; 4.9</span>
+                  <span class="section-menu__card-price">$21.00</span>
+                </div>
+              </figcaption>
+            </figure>
+          </section>
+
+          <a class="btn btn-primary-light section-menu__Btn" href="#ExploreFood"
+            >Explore Food</a
+          >
+        </div>
+      </section>
+
+      <section class="section-trending" id="trending">
+        <div class="container section-trending__grid">
+          <!-- trending 1 -->
+          <div class="section-trending__text-box">
+            <h3 class="heading-tertiary margin-bottom-lg">
+              What's Trending &sol; トレンド
+            </h3>
+            <h2 class="heading-primary margin-bottom-sm">Japanese Sushi</h2>
+            <p class="margin-bottom-sm">
+              Experience the exquisite flavors of our finest Sushi.
+            </p>
+
+            <ul class="section-trending__list">
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                Make Sushi
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Oshizushi
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Uramaki Sushi
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Nigiri Sushi
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Temaki Sushi
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Inari Sushi
+              </li>
+            </ul>
+          </div>
+          <div class="section-trending__img-box">
+            <img src="images/Sushi Trending.png" alt="sushi trending" />
+          </div>
+
+          <!-- trending 2 -->
+          <div class="section-trending__img-box">
+            <img src="images/Drink Trending.png" alt="sushi trending" />
+          </div>
+
+          <div class="section-trending__text-box">
+            <h3 class="heading-tertiary margin-bottom-lg">
+              What's Trending &sol; トレンド
+            </h3>
+            <h2 class="heading-primary margin-bottom-sm">Japanese Drinks</h2>
+            <p class="margin-bottom-sm">
+              Experience the exquisite flavors of our finest Drinks.
+            </p>
+
+            <ul class="section-trending__list">
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                Oruncha
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Sakura Tea
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Aojiru
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Ofukucha
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Kombu-cha
+              </li>
+              <li class="section-trending__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Mugicha
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-newsletter container" id="newsletter">
+        <div class="newsletter">
+          <h2 class="heading-secondary">
+            Receive exclusive offers <br />
+            directly to your inbox
+          </h2>
+          <p class="">Sign up for the newsletter</p>
+
+          <form class="newsletter__form" name="newsletter" netlify>
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="sedra@sushi.com"
+              required
+            />
+            <button class="btn btn-primary-light">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__wrapper">
+        <a class="brand" href="#">Sushi<span>.</span></a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#twitter">
+              <ion-icon class="footer__icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#linkedin">
+              <ion-icon class="footer__icon" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#facebook">
+              <ion-icon class="footer__icon" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#instagram">
+              <ion-icon class="footer__icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <p>
+          Copyright &copy; <span class="year">2025</span> by Sushi. Inc. All
+          rights reserved
+        </p>
+        <p style="color: aliceblue">
+          Built By
+          <a
+            href="https://github.com/Kareem-AEz"
+            style="border-bottom: 1px solid aliceblue; color: aliceblue"
+          >
+            Kareem A
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="/JS/script.js" type="module"></script>
+  </body>
+</html>

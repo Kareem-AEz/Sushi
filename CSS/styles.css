@@ -1,0 +1,343 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEMS
+
+- Font sizez (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 
+    52 / 62 / 74 / 86 / 98
+
+    - Font weights
+    Defaults: 
+    900
+    800
+    700
+    
+    - Line heights
+    1.4
+    1.3
+   
+
+    -letter spacing
+    2px
+    
+    
+--- 02 COLORS
+    
+    Primary: 
+    
+    
+    Accents:
+    
+    Tints:
+   
+    
+    Shades:
+   
+    Greys:
+    #ddd
+    #aaa
+    #555
+    #333
+
+
+
+ --- 03 SHADOWS
+    box-shadow: 0 1.2rem 3.2rem rgba(51, 51, 51, 0.05);
+    
+--- 04 BORDER-RADIUS
+4
+8
+12
+    
+    
+
+--- 05 WHITESPACE
+    - SPACING SYSTMES (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 28 / 32 / 48 / 64 / 80 /
+        96 / 128
+*/
+
+@import url("header.css");
+@import url("hero.css");
+@import url("about.css");
+@import url("menu.css");
+@import url("trending.css");
+@import url("newsletter.css");
+@import url("footer.css");
+
+:root {
+  --primary-color: #fff2ed;
+  --secondary-color: #7f2630;
+  --secondary-200-color: #8c3c45;
+  --secondary-100-color: #995159;
+  --secondary-50-color: #cca8ac;
+
+  --gradient-main: linear-gradient(45deg, rgba(127, 38, 48, 0.9), rgba(142, 49, 60, 0.8));
+
+  --accent-color: #ffbd42;
+
+  --dark-color: #272635;
+}
+
+*:focus {
+  outline: var(--accent-color) solid 0.2rem;
+  outline-offset: 0.2rem;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+}
+* {
+  transition-timing-function: cubic-bezier(0.055, 0.425, 0.295, 0.89);
+  box-sizing: border-box;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  scroll-behavior: smooth;
+}
+
+strong {
+  text-transform: uppercase;
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+a:link,
+a:visited {
+  display: inline-block;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 144.4rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+blockquote {
+  font-family: "Karla", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-style: italic;
+  color: #888;
+  position: relative;
+  z-index: 1;
+}
+
+cite {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #aaa;
+}
+
+/* Utility Classes */
+.brand:link,
+.brand:visited {
+  color: var(--primary-color);
+  font-size: 5.2rem;
+  padding: 0.8rem;
+  /* background-color: var(--secondary-color); */
+}
+
+.brand span {
+  line-height: 0;
+  font-size: 4.4rem;
+  font-weight: 900;
+  color: var(--accent-color);
+  transition: color 0.168s;
+}
+.brand:hover span {
+  color: var(--primary-color);
+}
+
+.select-none {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.heading-primary {
+  font-size: 7.4rem;
+  letter-spacing: 2px;
+}
+.heading-secondary {
+  font-size: 5.2rem;
+  letter-spacing: 2px;
+}
+.heading-tertiary {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.margin-top-sm {
+  margin-top: 3.2rem !important;
+}
+.margin-top-md {
+  margin-top: 4.8rem !important;
+}
+.margin-top-lg {
+  margin-top: 6.8rem !important;
+}
+
+.margin-bottom-xsm {
+  margin-bottom: 2.4rem !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 3.2rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 6.4rem !important;
+}
+
+.margin-left-sm {
+  margin-left: 3.2rem;
+}
+.margin-left-md {
+  margin-left: 4.8rem;
+}
+.margin-left-md {
+  margin-left: 9.6rem;
+}
+
+.flex {
+  display: flex !important;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.flex-gap-sm {
+  gap: 3.2rem;
+}
+
+/* Reusable Element Classes */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 100px;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+}
+.btn,
+.btn-md:link,
+.btn-md:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 100px;
+  padding: 0.8rem 1.6rem;
+}
+/* .btn:hover,
+.btn:active {
+} */
+
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited {
+  background-color: var(--dark-color);
+  border: 0.2rem solid var(--dark-color);
+  color: var(--primary-color);
+
+  transition: background-color 0.168s, color 0.168s;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+.btn-primary-light,
+.btn-primary-light:link,
+.btn-primary-light:visited {
+  background-color: var(--primary-color);
+  border: 0.2rem solid var(--primary-color);
+  color: var(--dark-color);
+
+  transition: background-color 0.168s, color 0.168s;
+}
+.btn-primary-light:hover,
+.btn-primary-light:active {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.btn-primary-red,
+.btn-primary-red:link,
+.btn-primary-red:visited {
+  background-color: var(--secondary-color);
+  border: 0.2rem solid var(--secondary-color);
+  color: var(--primary-color);
+
+  transition: background-color 0.168s, color 0.168s;
+}
+.btn-primary-red:hover,
+.btn-primary-red:active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-secondary,
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: var(--secondary-200-color);
+  border: 0.2rem solid var(--secondary-100-color);
+  color: var(--primary-color);
+
+  transition: background-color 0.168s, border-color 0.168s, color 0.168s;
+}
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #fff;
+  border: 0.2rem solid #fff;
+  color: var(--dark-color);
+}
+
+.btn-Outline,
+.btn-Outline:link,
+.btn-Outline:visited {
+  border: 0.2rem solid var(--secondary-color);
+  color: var(--secondary-color);
+
+  transition: border-color 0.168s, color 0.168s;
+}
+
+.btn-Outline:hover,
+.btn-Outline:active {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
